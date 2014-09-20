@@ -1,0 +1,813 @@
+2014/05/07 14:19:58 [error] [exception.CException] exception 'CException' with message 'Property "Info.activity1" is not defined.' in D:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('activity1')
+#1 D:\xampp\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('activity1')
+#2 D:\xampp\htdocs\framework\web\helpers\CHtml.php(1654): CHtml::resolveValue(Object(Info), 'activity1')
+#3 D:\xampp\htdocs\framework\web\widgets\CActiveForm.php(786): CHtml::activeTextArea(Object(Info), 'activity1', Array)
+#4 D:\xampp\htdocs\testmulti\protected\views\info\_form.php(26): CActiveForm->textArea(Object(Info), 'activity1', Array)
+#5 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#6 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#7 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#8 D:\xampp\htdocs\testmulti\protected\views\info\create.php(18): CController->renderPartial('_form', Array)
+#9 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#10 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#11 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#12 D:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#13 D:\xampp\htdocs\testmulti\protected\controllers\InfoController.php(79): CController->render('create', Array)
+#14 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): InfoController->actionCreate()
+#15 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 D:\xampp\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#22 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#24 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('info/create')
+#25 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/testmulti/index.php/info/create
+---
+2014/05/10 10:21:59 [warning] [application] Failed to set unsafe attribute "0" of "Info".
+in D:\xampp\htdocs\testmulti\protected\controllers\InfoController.php (72)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/05/10 10:21:59 [warning] [application] Failed to set unsafe attribute "1" of "Info".
+in D:\xampp\htdocs\testmulti\protected\controllers\InfoController.php (72)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/05/10 10:21:59 [warning] [application] Failed to set unsafe attribute "2" of "Info".
+in D:\xampp\htdocs\testmulti\protected\controllers\InfoController.php (72)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/05/10 10:22:39 [error] [exception.CException] exception 'CException' with message 'Property "Info.activity"" is not defined.' in D:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('activity"')
+#1 D:\xampp\htdocs\framework\web\helpers\CHtml.php(2518): CActiveRecord->__get('activity"')
+#2 D:\xampp\htdocs\framework\web\helpers\CHtml.php(1654): CHtml::resolveValue(Object(Info), 'activity"[$t]"')
+#3 D:\xampp\htdocs\framework\web\widgets\CActiveForm.php(786): CHtml::activeTextArea(Object(Info), 'activity"[$t]"', Array)
+#4 D:\xampp\htdocs\testmulti\protected\views\info\_form.php(29): CActiveForm->textArea(Object(Info), 'activity"[$t]"', Array)
+#5 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#6 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#7 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#8 D:\xampp\htdocs\testmulti\protected\views\info\create.php(18): CController->renderPartial('_form', Array)
+#9 D:\xampp\htdocs\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#10 D:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#11 D:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#12 D:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#13 D:\xampp\htdocs\testmulti\protected\controllers\InfoController.php(83): CController->render('create', Array)
+#14 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): InfoController->actionCreate()
+#15 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 D:\xampp\htdocs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#22 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('create')
+#24 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('info/create')
+#25 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/testmulti/index.php/info/create
+---
+2014/05/10 10:33:50 [error] [php] Invalid argument supplied for foreach() (D:\xampp\htdocs\testmulti\protected\controllers\InfoController.php:77)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(133): InfoController->runAction()
+#1 D:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\xampp\htdocs\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): InfoController->filterAccessControl()
+#4 D:\xampp\htdocs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\xampp\htdocs\framework\web\CController.php(265): InfoController->runActionWithFilters()
+#7 D:\xampp\htdocs\framework\web\CWebApplication.php(282): InfoController->run()
+#8 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/info/create
+in D:\xampp\htdocs\testmulti\protected\controllers\InfoController.php (77)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/17 16:06:21 [error] [php] Creating default object from empty value (D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php:41)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (41)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/17 16:06:33 [error] [php] Creating default object from empty value (D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php:41)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (41)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/17 16:12:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "1".' in D:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('1')
+#1 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/1
+---
+2014/07/17 16:12:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "id/view".' in D:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('id/view')
+#1 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/id/1
+---
+2014/07/17 16:12:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9).
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (50)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/17 16:12:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9)' in D:\xampp\htdocs\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(50): CActiveRecord->save()
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#8 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/?id=1
+HTTP_REFERER=http://minput.com/index.php/?id=1
+---
+2014/07/17 16:13:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9).
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (50)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/17 16:13:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9)' in D:\xampp\htdocs\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(50): CActiveRecord->save()
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#8 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/?id=1
+HTTP_REFERER=http://minput.com/index.php/?id=1
+---
+2014/07/17 16:31:13 [error] [php] Creating default object from empty value (D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php:74)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#2 D:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 D:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#4 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (74)
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (34)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 13:22:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "addTabularInputs".' in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('addTabularInput...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testmulti/index.php/addTabularInputs
+---
+2014/07/18 13:22:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php:64
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#1 C:\xampp\htdocs\framework\web\CController.php(308): CAction->runWithParams(Array)
+#2 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(XTabularInputAction))
+#3 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(XTabularInputAction), Array)
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('addTabularInput...')
+#5 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/addTabular...')
+#6 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs
+---
+2014/07/18 13:22:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addtabularInputs".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('addtabularInput...')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('addtabularInput...')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/addtabular...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testmulti/index.php/site/addtabularInputs
+---
+2014/07/18 13:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addtabularinputs".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('addtabularinput...')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('addtabularinput...')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/addtabular...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/testmulti/index.php/site/addtabularinputs
+---
+2014/07/18 13:28:24 [error] [exception.CException] exception 'CException' with message 'The asset "C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\assets" to be published does not exist.' in C:\xampp\htdocs\framework\web\CAssetManager.php:257
+Stack trace:
+#0 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(295): CAssetManager->publish('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(274): XTabularInput->registerClientScript()
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(173): XTabularInput->run()
+#3 C:\xampp\htdocs\testmulti\protected\views\site\index.php(42): CBaseController->widget('ext.widgets.tab...', Array)
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(63): CController->render('index', Array)
+#9 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/testmulti/index.php/
+---
+2014/07/18 13:30:39 [error] [exception.CException] exception 'CException' with message 'Property "UsersCvEducation.firstname" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('firstname')
+#1 C:\xampp\htdocs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('firstname')
+#2 C:\xampp\htdocs\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(UsersCvEducation), 'firstname')
+#3 C:\xampp\htdocs\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(UsersCvEducation), 'firstname', Array)
+#4 C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php(3): CHtml::activeTextField(Object(UsersCvEducation), '[1]firstname')
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(341): CController->renderPartial('extensions/_tab...', Array)
+#9 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(279): XTabularInput->renderContent()
+#10 C:\xampp\htdocs\framework\web\CBaseController.php(173): XTabularInput->run()
+#11 C:\xampp\htdocs\testmulti\protected\views\site\index.php(42): CBaseController->widget('ext.widgets.tab...', Array)
+#12 C:\xampp\htdocs\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#16 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(63): CController->render('index', Array)
+#17 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/testmulti/index.php/
+---
+2014/07/18 17:42:01 [error] [php] Creating default object from empty value (C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php:79)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (79)
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (40)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 20:00:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1. The SQL statement executed was: SELECT * FROM `users_cv_education` `t` WHERE user_id={$id}.
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (75)
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (40)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 20:00:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1. The SQL statement executed was: SELECT * FROM `users_cv_education` `t` WHERE user_id={$id}' in C:\xampp\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(75): CActiveRecord->findAll('user_id={$id}')
+#4 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(40): SiteController->getItemsToUpdate(1, '2')
+#5 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/testmulti/index.php/site/index?id=2
+---
+2014/07/18 20:08:11 [error] [php] Missing argument 2 for SiteController::getItemsToUpdate(), called in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php on line 40 and defined (C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php:69)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (69)
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (40)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 20:18:26 [error] [php] Array to string conversion (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(341): SiteController->renderPartial()
+#2 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(279): XTabularInput->renderContent()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(173): XTabularInput->run()
+#4 C:\xampp\htdocs\testmulti\protected\views\site\index.php(45): SiteController->widget()
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#7 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#8 C:\xampp\htdocs\framework\web\CController.php(782): SiteController->renderPartial()
+#9 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(68): SiteController->render()
+#10 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (2)
+in C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php (341)
+in C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php (279)
+2014/07/18 20:36:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT * FROM `users_cv_education` `t` WHERE user_id=:id.
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (77)
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (40)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 20:36:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT * FROM `users_cv_education` `t` WHERE user_id=:id' in C:\xampp\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(77): CActiveRecord->findAll('user_id=:id', Array)
+#4 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(40): SiteController->getItemsToUpdate('1')
+#5 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/testmulti/index.php/site/index?id=1
+---
+2014/07/18 20:37:58 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.user_id" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\schema\CDbCriteria.php(160): CComponent->__set('user_id', '1')
+#1 C:\xampp\htdocs\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(77): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(40): SiteController->getItemsToUpdate('1')
+#5 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/testmulti/index.php/site/index?id=1
+---
+2014/07/18 20:38:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `users_cv_education` `t` WHERE user_id=:id.
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (77)
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (40)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 20:38:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `users_cv_education` `t` WHERE user_id=:id' in C:\xampp\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(77): CActiveRecord->findAll('user_id=:id', Array)
+#4 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(40): SiteController->getItemsToUpdate('1')
+#5 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/testmulti/index.php/site/index?id=1
+---
+2014/07/18 20:38:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `users_cv_education` `t` WHERE user_id=:id.
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (77)
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (40)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 20:38:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `users_cv_education` `t` WHERE user_id=:id' in C:\xampp\htdocs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(77): CActiveRecord->findAll('user_id=:id', Array)
+#4 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(40): SiteController->getItemsToUpdate('1')
+#5 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/testmulti/index.php/site/index?id=1
+---
+2014/07/18 20:52:39 [error] [php] Array to string conversion (C:\xampp\htdocs\framework\web\helpers\CHtml.php:2181)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\helpers\CHtml.php(1432): resolveNameID()
+#1 C:\xampp\htdocs\testmulti\protected\views\site\index.php(18): activeTextField()
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#5 C:\xampp\htdocs\framework\web\CController.php(782): SiteController->renderPartial()
+#6 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(68): SiteController->render()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/index?id=1
+in C:\xampp\htdocs\testmulti\protected\views\site\index.php (18)
+in C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (68)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:23:49 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=3&_=1405715028869
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:23:50 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=3&_=1405715030783
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:23:51 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=3&_=1405715031238
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:23:51 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=3&_=1405715031459
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:24:15 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=2&_=1405715055116
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:25:34 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=2&_=1405715134822
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:25:37 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=0&_=1405715137147
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:29:09 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=3&_=1405715349180
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:45:33 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=2&_=1405716333373
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 22:45:36 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=2&_=1405716336658
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 23:10:32 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php(61): SiteController->renderPartial()
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(76): XTabularInputAction->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): XTabularInputAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/addTabularInputs?index=2&_=1405717832452
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\actions\XTabularInputAction.php (61)
+in C:\xampp\htdocs\testmulti\index.php (13)
+2014/07/18 23:36:16 [error] [php] Undefined variable: model (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(343): SiteController->renderPartial()
+#2 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(284): XTabularInput->renderContent()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(173): XTabularInput->run()
+#4 C:\xampp\htdocs\testmulti\protected\views\site\index.php(30): SiteController->widget()
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#7 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#8 C:\xampp\htdocs\framework\web\CController.php(782): SiteController->renderPartial()
+#9 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(71): SiteController->render()
+#10 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/index
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (4)
+in C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php (343)
+in C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php (284)
+2014/07/18 23:41:38 [error] [php] Undefined variable: form (C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(347): SiteController->renderPartial()
+#2 C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(284): XTabularInput->renderContent()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(173): XTabularInput->run()
+#4 C:\xampp\htdocs\testmulti\protected\views\site\index.php(30): SiteController->widget()
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#7 C:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#8 C:\xampp\htdocs\framework\web\CController.php(782): SiteController->renderPartial()
+#9 C:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(71): SiteController->render()
+#10 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/testmulti/index.php/site/index
+in C:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php (347)
+in C:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php (284)
+2014/07/19 16:44:02 [error] [php] Undefined variable: form (D:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php:21)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(364): SiteController->renderPartial()
+#2 D:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php(286): XTabularInput->renderContent()
+#3 D:\xampp\htdocs\framework\web\CBaseController.php(173): XTabularInput->run()
+#4 D:\xampp\htdocs\testmulti\protected\views\site\index.php(31): SiteController->widget()
+#5 D:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#6 D:\xampp\htdocs\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#7 D:\xampp\htdocs\framework\web\CController.php(869): SiteController->renderFile()
+#8 D:\xampp\htdocs\framework\web\CController.php(782): SiteController->renderPartial()
+#9 D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(71): SiteController->render()
+#10 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/index
+in D:\xampp\htdocs\testmulti\protected\views\site\extensions\_tabularInput.php (21)
+in D:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php (364)
+in D:\xampp\htdocs\testmulti\protected\extensions\widgets\tabularinput\XTabularInput.php (286)
+2014/07/19 17:21:40 [error] [php] Undefined variable: len (D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php:40)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/index
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (40)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 17:31:25 [error] [php] Creating default object from empty value (D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php:97)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#2 D:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 D:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#4 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/index?id=2
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (97)
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (41)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 17:33:20 [error] [php] Creating default object from empty value (D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php:97)
+Stack trace:
+#0 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#2 D:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 D:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#4 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\xampp\htdocs\testmulti\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/index?id=2
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (97)
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (41)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 17:46:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9).
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (63)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 17:46:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9)' in D:\xampp\htdocs\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(63): CActiveRecord->save()
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/index?id=2
+HTTP_REFERER=http://minput.com/index.php/site/index?id=2
+---
+2014/07/19 17:46:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9).
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (63)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 17:46:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9)' in D:\xampp\htdocs\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(63): CActiveRecord->save()
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/index?id=2
+HTTP_REFERER=http://minput.com/index.php/site/index?id=2
+---
+2014/07/19 17:50:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9).
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (63)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 17:50:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `users_cv_education` (`cv_edu_id`, `level_of_education`, `degree`, `group`, `institutions`, `passing_year`, `duration`, `cgpa_result`, `achievement`, `user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9)' in D:\xampp\htdocs\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 D:\xampp\htdocs\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php(63): CActiveRecord->save()
+#3 D:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 D:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\testmulti\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/index?id=2
+HTTP_REFERER=http://minput.com/index.php/site/index?id=2
+---
+2014/07/19 18:42:34 [warning] [application] Failed to set unsafe attribute "company_organization" of "UsersCvEducation".
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (86)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 18:42:34 [warning] [application] Failed to set unsafe attribute "company_business" of "UsersCvEducation".
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (86)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 18:43:07 [warning] [application] Failed to set unsafe attribute "company_organization" of "UsersCvEducation".
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (86)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 18:43:07 [warning] [application] Failed to set unsafe attribute "company_business" of "UsersCvEducation".
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (86)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 18:43:46 [warning] [application] Failed to set unsafe attribute "company_organization" of "UsersCvEducation".
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (86)
+in D:\xampp\htdocs\testmulti\index.php (13)
+2014/07/19 18:43:46 [warning] [application] Failed to set unsafe attribute "company_business" of "UsersCvEducation".
+in D:\xampp\htdocs\testmulti\protected\controllers\SiteController.php (86)
+in D:\xampp\htdocs\testmulti\index.php (13)
